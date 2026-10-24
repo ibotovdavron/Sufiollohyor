@@ -1,43 +1,51 @@
-/* Sayt ma'lumotlarini shu faylda o'zgartiring. Bu versiyada ma'lumotlar kod ichida saqlanadi. */
-window.SITE_DATA = {
-  siteName: "Bilim Maydoni",
-  contact: { address: "Oltinsoy tumani", email: "", phone: "" },
-  news: [
-    {title:"Yangi o‘quv imkoniyatlari",date:"E’lon",description:"Ta’lim yangiliklari va markazdagi muhim xabarlar shu yerda e’lon qilinadi.",image:"reference-home.jpg"},
-    {title:"Bilimlar bellashuvi",date:"Musobaqa",description:"O‘quvchilar o‘z bilim va mahoratlarini sinab ko‘rishlari mumkin.",image:"reference-competitions.jpg"},
-    {title:"Ustozlar jamoasi",date:"Ma’lumot",description:"Tajribali ustozlar va ular o‘qitadigan fanlar bilan tanishing.",image:"reference-teachers.jpg"}
+/* Ommaviy namunaviy ma'lumotlar. Haqiqiy o'quvchi ma'lumotlarini rozilik bilan almashtiring. */
+window.CENTER_DATA = {
+  centerName: "So‘fi Ollohyor",
+  location: "Oltinsoy tumani",
+  phone: "+998990616472",
+  telegram: "https://t.me/sufi_ollohyor_uquv_markaz",
+  instagram: "https://www.instagram.com/sufiollohyor?dlrf=MWhkc3luMGN4NnVuNQ==",
+  mathTelegram: "https://t.me/matematika144",
+  studentsCount: 60,
+  groupsCount: 1,
+  groupName: "Matematika 144",
+  teachersCount: 5,
+  subjects: [
+    {name:"Matematika", icon:"🧮", caption:"Mantiq va natija"},
+    {name:"Fizika", icon:"⚛️", caption:"Kashfiyot sari"},
+    {name:"Ingliz tili", icon:"🗣️", caption:"Dunyo sari"},
+    {name:"Ona tili", icon:"📚", caption:"So‘z va tafakkur"}
   ],
-  competitions: [
-    {title:"Matematika bellashuvi",category:"Matematika",description:"Mantiqiy fikrlash va masala yechish bo‘yicha bilimlar bellashuvi.",date:"Sana e’lon qilinadi"},
-    {title:"Zakovat musobaqasi",category:"Jamoaviy o‘yin",description:"Jamoa bilan fikrlash, tezkorlik va umumiy bilimlarni sinash.",date:"Sana e’lon qilinadi"},
-    {title:"Fan olimpiadasi",category:"Olimpiada",description:"Fan bo‘yicha bilimlarni chuqur sinovdan o‘tkazish.",date:"Sana e’lon qilinadi"},
-    {title:"Tezkor hisoblash",category:"Matematika",description:"Hisoblash aniqligi va tezligini rivojlantirishga qaratilgan bellashuv.",date:"Sana e’lon qilinadi"},
-    {title:"Mantiqiy masalalar",category:"Mantiq",description:"Qiziqarli mantiqiy topshiriqlarni yechish musobaqasi.",date:"Sana e’lon qilinadi"},
-    {title:"Bilimlar sinovi",category:"Umumiy bilim",description:"Turli mavzulardagi savollar orqali bilimlarni tekshirish.",date:"Sana e’lon qilinadi"},
-    {title:"Fizika sinovi",category:"Fizika",description:"Fizik tushunchalar va masalalar bo‘yicha bilimlar sinovi.",date:"Sana e’lon qilinadi"},
-    {title:"Ingliz tili tanlovi",category:"Ingliz tili",description:"Lug‘at boyligi va til ko‘nikmalariga oid bellashuv.",date:"Sana e’lon qilinadi"},
-    {title:"Yosh tadqiqotchilar",category:"Loyiha",description:"Ijodiy g‘oyalar va kichik loyihalarni taqdim etish.",date:"Sana e’lon qilinadi"}
+  students: [
+    {name:"Aliyev Behruz", group:"Matematika 144", stars:120, result:"Faol o‘quvchi"},
+    {name:"Karimova Dilnura", group:"Matematika 144", stars:115, result:"Yuqori natija"},
+    {name:"To‘rayev Azizbek", group:"Matematika 144", stars:110, result:"Musobaqa ishtirokchisi"},
+    {name:"Mirzayeva Sarvinoz", group:"Matematika 144", stars:102, result:"Barqaror o‘sish"},
+    {name:"Abdullayev Davron", group:"Matematika 144", stars:98, result:"Faol ishtirokchi"},
+    {name:"Namuna o‘quvchi 6", group:"Matematika 144", stars:90, result:"Namuna ma’lumoti"},
+    {name:"Namuna o‘quvchi 7", group:"Matematika 144", stars:86, result:"Namuna ma’lumoti"},
+    {name:"Namuna o‘quvchi 8", group:"Matematika 144", stars:82, result:"Namuna ma’lumoti"},
+    {name:"Namuna o‘quvchi 9", group:"Matematika 144", stars:75, result:"Namuna ma’lumoti"}
   ],
   teachers: [
-    {name:"Ustoz 1",subject:"Matematika",experience:"Ma’lumot kiritiladi",bio:"Bu namunaviy profil. Ustozning tarjimai holi, tajribasi va dars berish yo‘nalishini shu yerga kiriting."},
-    {name:"Ustoz 2",subject:"Fizika",experience:"Ma’lumot kiritiladi",bio:"Bu namunaviy profil. Ustozning tarjimai holi, tajribasi va dars berish yo‘nalishini shu yerga kiriting."},
-    {name:"Ustoz 3",subject:"Ingliz tili",experience:"Ma’lumot kiritiladi",bio:"Bu namunaviy profil. Ustozning tarjimai holi, tajribasi va dars berish yo‘nalishini shu yerga kiriting."},
-    {name:"Ustoz 4",subject:"Ona tili",experience:"Ma’lumot kiritiladi",bio:"Bu namunaviy profil. Ustoz haqidagi to‘liq ma’lumotni shu yerda yozing."},
-    {name:"Ustoz 5",subject:"Matematika",experience:"Ma’lumot kiritiladi",bio:"Bu namunaviy profil. Ustoz haqidagi to‘liq ma’lumotni shu yerda yozing."},
-    {name:"Ustoz 6",subject:"Fizika",experience:"Ma’lumot kiritiladi",bio:"Bu namunaviy profil. Ustoz haqidagi to‘liq ma’lumotni shu yerda yozing."},
-    {name:"Ustoz 7",subject:"Ingliz tili",experience:"Ma’lumot kiritiladi",bio:"Bu namunaviy profil. Ustoz haqidagi to‘liq ma’lumotni shu yerda yozing."}
+    {name:"Ustoz 1", subject:"Matematika", bio:"Ustoz haqida ma’lumot keyin qo‘shiladi.", icon:"👨‍🏫"},
+    {name:"Ustoz 2", subject:"Fizika", bio:"Ustoz haqida ma’lumot keyin qo‘shiladi.", icon:"👩‍🏫"},
+    {name:"Ustoz 3", subject:"Ingliz tili", bio:"Ustoz haqida ma’lumot keyin qo‘shiladi.", icon:"👨‍🏫"},
+    {name:"Ustoz 4", subject:"Ona tili", bio:"Ustoz haqida ma’lumot keyin qo‘shiladi.", icon:"👩‍🏫"},
+    {name:"Ustoz 5", subject:"Fan keyin belgilanadi", bio:"Ustoz haqida ma’lumot keyin qo‘shiladi.", icon:"👨‍🏫"}
   ],
-  ranking: [
-    {name:"O‘quvchi 1",className:"5-sinf",subject:"Matematika",stars:25,status:"Faol",score:250},
-    {name:"O‘quvchi 2",className:"5-sinf",subject:"Matematika",stars:22,status:"Faol",score:220},
-    {name:"O‘quvchi 3",className:"6-sinf",subject:"Fizika",stars:20,status:"Faol",score:200},
-    {name:"O‘quvchi 4",className:"6-sinf",subject:"Ingliz tili",stars:18,status:"Faol",score:180},
-    {name:"O‘quvchi 5",className:"7-sinf",subject:"Matematika",stars:16,status:"Faol",score:160},
-    {name:"O‘quvchi 6",className:"7-sinf",subject:"Fizika",stars:14,status:"Faol",score:140}
+  competitions: [
+    {name:"Zakovat musobaqasi", type:"Bilimlar bellashuvi", description:"Mantiqiy fikrlash va jamoaviy bilimni sinovdan o‘tkazish.", icon:"🏆", status:"Reja / e’lon"},
+    {name:"Matematika bellashuvi", type:"Matematik tafakkur", description:"Misol va masalalar orqali bilimlarni mustahkamlash.", icon:"🧠", status:"Reja / e’lon"},
+    {name:"Haftalik test sinovi", type:"Bilimni tekshirish", description:"O‘quvchilarning o‘zlashtirish darajasini kuzatish.", icon:"📝", status:"Reja / e’lon"},
+    {name:"Yutuqlar haftaligi", type:"Rag‘batlantirish", description:"Faol qatnashchilar va yutuqlarni e’tirof etish.", icon:"🌟", status:"Reja / e’lon'}
   ],
-  results: [
-    {title:"Matematika bo‘yicha oylik natija",description:"Namunaviy natija. Haqiqiy ballar va sanalarni data.js faylida yangilang.",category:"Matematika"},
-    {title:"Zakovat musobaqasi natijalari",description:"Ishtirokchilar va jamoalar natijalarini shu bo‘limda e’lon qiling.",category:"Musobaqa"},
-    {title:"Fan olimpiadasi",description:"Olimpiada natijalari va g‘oliblar haqidagi ma’lumotlar.",category:"Olimpiada"}
+  starRules: [
+    {title:"Uy vazifasini to‘liq bajarish", stars:1},
+    {title:"Darsdagi faol ishtirok", stars:1},
+    {title:"Testdan yuqori natija", stars:3},
+    {title:"Musobaqada 1-o‘rin", stars:5},
+    {title:"Musobaqada 2-o‘rin", stars:3},
+    {title:"Musobaqada 3-o‘rin", stars:2}
   ]
 };

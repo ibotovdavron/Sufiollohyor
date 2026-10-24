@@ -1,17 +1,34 @@
 <!doctype html>
 <html lang="uz">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#176b3a"><meta name="description" content="Ta'lim yangiliklari, musobaqalar, ustozlar va o'quvchilar reytingi.">
-  <title>Bosh menyu | Ta’lim platformasi</title><link rel="stylesheet" href="style.css">
-</head>
-<body data-page="home">
-  <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">B</span><span>Bilim <b>Maydoni</b></span></a><span class="top-label">Ta’lim platformasi</span></header>
-  <main class="container page-enter">
-    <section class="hero"><p class="eyebrow">BILIM SARI OLGA</p><h1 class="animated-title">Har kuni yangi <span>imkoniyat.</span></h1><p>Yangiliklar, musobaqalar, ustozlar va o‘quvchilar yutuqlari — barchasi bir joyda.</p><a class="btn btn-primary" href="competitions.html">Musobaqalarni ko‘rish <span>→</span></a><div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div></section>
-    <section class="section-head"><div><p class="eyebrow">SO‘NGGI XABARLAR</p><h2>Yangiliklar va e’lonlar</h2></div><span class="pill">Ommaviy sahifa</span></section>
-    <div id="news-list" class="card-grid news-grid"></div>
-    <section class="callout"><div><h2>Bilimingizni sinab ko‘rishga tayyormisiz?</h2><p>Musobaqalar bo‘limiga o‘ting va keyingi tadbirlar bilan tanishing.</p></div><a class="btn btn-light" href="competitions.html">Ko‘rish <span>→</span></a></section>
-  </main>
-  <div id="site-footer"></div><script src="data.js"></script><script src="app.js"></script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#020b09"><meta name="description" content="So‘fi Ollohyor o‘quv markazi — Oltinsoy tumani">
+<title>Bosh sahifa | So‘fi Ollohyor</title><link rel="stylesheet" href="style.css">
+</head><body>
+<header class="topbar"><div class="wrap topinner">
+<a class="brand" href="index.html"><span class="brand-mark">S<span class="green">O</span></span><span>SO‘FI OLLOHYOR<small>O‘QUV MARKAZI</small></span></a>
+<div class="social"><a data-telegram href="https://t.me/sufi_ollohyor_uquv_markaz" aria-label="Telegram">✈️ Telegram</a><a data-instagram href="https://www.instagram.com/sufiollohyor?dlrf=MWhkc3luMGN4NnVuNQ==" aria-label="Instagram">📸</a></div>
+</div></header>
+<main class="wrap">
+<section class="hero">
+<div class="hero-copy"><span class="eyebrow">📍 Oltinsoy tumani</span><h1>So‘fi <span class="green">Ollohyor</span></h1><h2 class="green">O‘QUV MARKAZI</h2><p class="lead">Bilim · Tarbiya · Natija</p><p>Matematika, fizika, ingliz tili va ona tili fanlari bo‘yicha sifatli ta’lim olishga intiluvchi zamonaviy o‘quv markazi.</p><a class="btn" href="about.html">Markaz haqida →</a><a class="btn secondary" data-telegram href="https://t.me/sufi_ollohyor_uquv_markaz">Telegram ↗</a></div>
+<div class="hero-art"><div class="hero-logo"><div class="big">S<span class="green">O</span></div><div class="sub">🎓 SO‘FI OLLOHYOR</div><p>O‘QUV MARKAZI</p><span class="smallprint">BILIM · TARBIYA · NATIJA</span></div></div>
+</section>
+<section class="stats">
+<div class="stat"><span class="emoji">👥</span><div><strong>60</strong><span>nafar o‘quvchi</span></div></div>
+<div class="stat"><span class="emoji">🎓</span><div><strong>1</strong><span>guruh · Matematika 144</span></div></div>
+<div class="stat"><span class="emoji">👨‍🏫</span><div><strong>5</strong><span>nafar ustoz</span></div></div>
+<div class="stat"><span class="emoji">📍</span><div><strong>Oltinsoy</strong><span>tumani</span></div></div>
+</section>
+<div class="section-head"><div><h2>Bizning fanlar</h2><p>Bilim sari birgalikda intilamiz</p></div></div>
+<section class="subjects" id="homeSubjects"></section>
+<a class="panel" style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap" data-math-telegram href="https://t.me/matematika144"><div><span class="tag">MAXSUS GURUH</span><h2 style="margin:8px 0">🟢 Matematika 144 guruhi</h2><p class="muted" style="margin:0">Matematika bilan kuchli natijalarga!</p></div><span class="btn">Guruhga o‘tish →</span></a>
+<div class="section-head"><div><h2>Asosiy bo‘limlar</h2><p>Kerakli ma’lumotni tanlang</p></div></div>
+<section class="feature-grid" id="homeFeatures"></section>
+<section class="panel"><div class="section-head"><div><h2>⭐ O‘quvchilar reytingi</h2><p>Namunaviy reyting — keyin koddan yangilanadi</p></div><a class="green" href="ranking.html">Barchasi →</a></div><div id="rankPreview"></div></section>
+<section class="panel"><div class="section-head"><div><h2>📢 Yangiliklar</h2><p>Rasmiy Telegram kanalimizdan kuzatib boring</p></div></div><p class="muted">E’lonlar, dars jadvalidagi o‘zgarishlar va markaz yangiliklari Telegram kanalida joylanadi.</p><a class="btn" data-telegram href="https://t.me/sufi_ollohyor_uquv_markaz">Telegram kanaliga o‘tish ↗</a></section>
+</main>
+<footer class="footer wrap">© <span id="year">2026</span> So‘fi Ollohyor o‘quv markazi · Oltinsoy tumani<br><span class="smallprint">Namuna o‘quvchi ma’lumotlari keyinchalik haqiqiy ma’lumotlar bilan almashtiriladi.</span></footer>
+<nav class="bottom-nav" id="bottomNav" aria-label="Asosiy menyu"></nav>
+<script src="data.js"></script><script src="app.js"></script>
 </body></html>
